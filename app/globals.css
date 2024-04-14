@@ -42,6 +42,14 @@ body {
   font-size: 14pt;
 }
 
+.btn-add-todo {
+  @apply bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-400 shadow
+}
+
+.btn-add-todo:hover {
+  @apply bg-gray-100
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

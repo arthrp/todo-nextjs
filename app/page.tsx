@@ -38,7 +38,7 @@ export default function HomePage() {
         onChange={e => setInputText(e.target.value)}
         style={{ marginRight: '10px' }}
       />
-      <button onClick={addTodo} className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 shadow">Add Todo</button>
+      <button onClick={addTodo} className="btn-add-todo">Add Todo</button>
       <div>
         {todos.map(todo => (
           <Todo key={todo.id} todo={todo} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
