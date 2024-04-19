@@ -31,12 +31,12 @@ export default function HomePage() {
   };
 
   return (
-    <div style={{ padding: '20px' }}>
+    <div className="p-4">
       <input
         type="text"
         value={inputText}
         onChange={e => setInputText(e.target.value)}
-        style={{ marginRight: '10px' }}
+        className="todo-input"
       />
       <button onClick={addTodo} className="btn-add-todo">Add Todo</button>
       <div>
